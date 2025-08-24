@@ -44,7 +44,7 @@ import './Navbar.css';
 const Navbar = ({ onSelectCategory }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#"><h2><center>Top International Headlines</center></h2></a>
+      <a className="navbar-brand" href="/"><h2><center>Top International Headlines</center></h2></a>
       <br />
       <div className="collapse navbar-collapse" id="navbarNav">
       <ul className="navbar-nav">

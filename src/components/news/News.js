@@ -58,7 +58,8 @@ const API_KEY = 'c193abb0a86941b1b452c651c2a1f91d' //'714ef9b8a6ef47d19b4bda6f4f
 const News = ({ category }) => {
   const [mynews, setMyNews] = useState([]);
   const [loading, setLoading] = useState(true);
-
+  
+  useEffect(() => {
   const fetchData = async () => {
     setLoading(true);
     try {
@@ -74,7 +75,7 @@ const News = ({ category }) => {
     }
   };
 
-  useEffect(() => {
+  //useEffect(() => {
     fetchData();
   }, [category] );
 
